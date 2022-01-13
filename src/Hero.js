@@ -10,52 +10,53 @@ import img5 from './images/s4.jpg'
 import { keyframes } from 'styled-components'
 import AboutUs from './Components/AboutUs'
 import Contacttemp from './Components/Contact/Contacttemp'
+import Tilt from 'react-tilt'
 
 const Hero = () => {
   return (
     <div>
       <HeroContainer>
         <HeroBg>
-          <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-            <div className="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div className="carousel-inner">
-              <div className="carousel-item active">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
                 <ImgBg src={img2}  alt="..." />
               </div>
-              <div className="carousel-item">
+              <div class="carousel-item">
                 <ImgBg src={img3} alt="..." />
               </div>
-              <div className="carousel-item">
+              <div class="carousel-item">
                 <ImgBg src={img5}  alt="..." />
               </div>
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
             </button>
           </div>
         </HeroBg>
         <HeroContent>
           <HeroItems>
-           
+            <Tilt>
               <HeroH1>Beauty & Cosmetics Products</HeroH1>
-      
+            </Tilt>
 
             <Hero2>BabyCare | SkinCare | HairCare and much more</Hero2>
-           
+            <Tilt>
               <HeroP>By Soft Touch</HeroP>
-          
-            <button type="button" href="https://www.goldengirlcosmetics.com/" className="btn btn-outline-success btn-lg" >Shop Now</button>
+            </Tilt>
+            <button type="button" href="https://www.goldengirlcosmetics.com/" class="btn btn-outline-success btn-lg" >Shop Now</button>
 
-            {/* <Button className="btn btn-outline-success" primary="true" big="true" round="true" href="https://www.goldengirlcosmetics.com/" target="_blank" style={{textDecoration : 'none'}}>Shop Now</Button> */}
+            {/* <Button class="btn btn-outline-success" primary="true" big="true" round="true" href="https://www.goldengirlcosmetics.com/" target="_blank" style={{textDecoration : 'none'}}>Shop Now</Button> */}
             <Scrolldown>
               <Chevrons>
                 <Chevrondown></Chevrondown>
