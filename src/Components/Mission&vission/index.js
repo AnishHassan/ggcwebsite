@@ -10,10 +10,14 @@ export default function Visionggc() {
             <MVisionRow>
               
               <MVisionColumnS>
+                <Tilt >
                   <MVisionImg src={mission} alt="img"/>
+                </Tilt> 
               </MVisionColumnS>
               <MVisionColumnS>
+                <Tilt >
                   <MVisionImg src={vision} alt="img"/>
+                </Tilt> 
               </MVisionColumnS>
                           
             </MVisionRow>
