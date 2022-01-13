@@ -2,40 +2,78 @@ import React from 'react'
 import styled from 'styled-components'
 import { Button } from "./Button"
 import video from './videos/vid.mp4'
-import img from './images/1.jpg'
+import img1 from './images/1.jpg'
+import img2 from './images/s1.jfif'
+import img3 from './images/s2.jpg'
+import img4 from './images/s3.jpg'
+import img5 from './images/s4.jpg'
 import { keyframes } from 'styled-components'
 import AboutUs from './Components/AboutUs'
 import Contacttemp from './Components/Contact/Contacttemp'
-const Hero = () => {
-    return (
-        <div>
-            <HeroContainer>
-                <HeroBg>
-                    <ImgBg src={img} alt="img"></ImgBg>
-                </HeroBg>
-                <HeroContent>
-                    <HeroItems>
-                        <HeroH1>Beauty & Cosmetics Products</HeroH1>
-                        <Hero2>BabyCare | SkinCare | HairCare and much more</Hero2>
-                        <HeroP>By Soft Touch</HeroP>
-                        <Button primary="true" big="true" round="true" href="https://www.goldengirlcosmetics.com/" target="_blank">Shop Now</Button>
-                        <Scrolldown>
-                            <Chevrons>
-                                <Chevrondown></Chevrondown>
-                                <Chevrondown></Chevrondown>
-                            </Chevrons>
-                        </Scrolldown>
-                    </HeroItems>
+import Tilt from 'react-tilt'
 
-                </HeroContent>
-            </HeroContainer>
-           
-            <AboutUs/>
-            <div className=' mt-5 mb-5'>
-            <Contacttemp/>
+const Hero = () => {
+  return (
+    <div>
+      <HeroContainer>
+        <HeroBg>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-        </div>
-    )
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <ImgBg src={img2}  alt="..." />
+              </div>
+              <div class="carousel-item">
+                <ImgBg src={img3} alt="..." />
+              </div>
+              <div class="carousel-item">
+                <ImgBg src={img5}  alt="..." />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </HeroBg>
+        <HeroContent>
+          <HeroItems>
+            <Tilt>
+              <HeroH1>Beauty & Cosmetics Products</HeroH1>
+            </Tilt>
+
+            <Hero2>BabyCare | SkinCare | HairCare and much more</Hero2>
+            <Tilt>
+              <HeroP>By Soft Touch</HeroP>
+            </Tilt>
+            <button type="button" href="https://www.goldengirlcosmetics.com/" class="btn btn-outline-success btn-lg" >Shop Now</button>
+
+            {/* <Button class="btn btn-outline-success" primary="true" big="true" round="true" href="https://www.goldengirlcosmetics.com/" target="_blank" style={{textDecoration : 'none'}}>Shop Now</Button> */}
+            <Scrolldown>
+              <Chevrons>
+                <Chevrondown></Chevrondown>
+                <Chevrondown></Chevrondown>
+              </Chevrons>
+            </Scrolldown>
+          </HeroItems>
+
+        </HeroContent>
+      </HeroContainer>
+
+      <AboutUs />
+      <div className=' mt-5 mb-5'>
+        <Contacttemp />
+      </div>
+    </div>
+  )
 }
 
 export default Hero
@@ -80,9 +118,17 @@ left : 0;
 width : 100%;
 height : 100%;
 overflow: hidden;
+
 `
 
 const ImgBg = styled.img`
+width : 100vw;
+height: 100vh;
+-o-object-fit : cover;
+object-fit: cover;
+`
+
+const slBg = styled.div`
 width : 100%;
 height: 100%;
 -o-object-fit : cover;
@@ -114,7 +160,7 @@ font-weight : bold;
 
 
 const HeroH1 = styled.h1`
-font-size: clamp(1.5rem, 6vw , 4rem);
+font-size: clamp(1.5rem, 4vw , 3rem);
 margin-bottom: 1.5rem;
 letter-spacing: 3px;
 padding: 0 1rem;
@@ -125,18 +171,18 @@ font-family : 'Poppins';
 
 
 const HeroP = styled.p`
-font-size: clamp(1rem, 3vw , 3rem);
+font-size: clamp(1rem, 2.3vw , 2rem);
 margin-bottom: 2rem;
 font-weight: 400;
 font-family : 'Poppins';
 `
 
 const Hero2 = styled.p`
-font-size: clamp(1rem, 2vw , 2rem);
+font-size: clamp(1rem, 1.5vw , 2rem);
 margin-bottom: 2rem;
 font-weight: 400;
 font-family : 'Poppins';
-color : #000;
+color : #01bf71;;
 `
 const scrolldownanim = keyframes`
 0% {
@@ -227,5 +273,4 @@ margin-top: -6px;
 
 `
 
-  
-  
+

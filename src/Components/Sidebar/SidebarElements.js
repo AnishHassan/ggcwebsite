@@ -44,7 +44,7 @@ text-decoration : none;
 list-style :none;
 transition: 0.2s ease-in-out;
 text-decoration : none;
-color : #fff;
+color : #000;
 cursor : pointer;
 
 &:hover {
@@ -94,4 +94,31 @@ text-decoration : none;
     color: #010606;
     transform : translateY(-2px);
 }
+`
+
+
+export const SideContent = styled.div`
+z-index  : 3;
+height : calc(100vh - 80px);
+max-height : 100%;
+padding : 0rem calc((100vw - 1300px)/2);
+margin-top : 50px;
+`
+
+export const Sidebg = styled.div`
+position : absolute;
+top: 0;
+bottom : 0;
+right : 0;
+left : 0;
+width : 100%;
+height : 100%;
+overflow: hidden;
+`
+
+export const Sideimg = styled.img`
+width : 100vw;
+height: 100vh;
+-o-object-fit : cover;
+object-fit: cover;
 `

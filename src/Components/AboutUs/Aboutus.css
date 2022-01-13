@@ -17,7 +17,7 @@
   justify-content: center;
 }
 .f1, .f2, .f3{
-  background-color: #023783 ;
+  background-color:  #01bf71 ;
   color: white;
   font-family: 'Poppins', sans-serif;
   /* font-weight: ; */
@@ -28,7 +28,6 @@
   padding-bottom: 25px;
   padding-left: 50px;
   padding-right: 50px;
-  border: 2px solid #01193b;
   /*border-collapse: collapse; */
   width:400px;
 
