@@ -4,7 +4,7 @@ import { BrowserRouter as Router,Routes,Route } from "react-router-dom"
 import Sidebar from './Components/Sidebar/index.js'
 import Navbar from './Components/Navbar/index.js';
 import Hero from './Hero'
-import Visionggc from './Components/Mission&vission/Visionggc.js'
+import Visionggc from './Components/Mission&vission/Visionggc'
 import ContactUs from './Components/ContactUs/ContactUs.js';
 import FooterBar from './Components/Footer/index'
 function App() {
