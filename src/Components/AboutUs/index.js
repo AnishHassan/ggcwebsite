@@ -17,7 +17,7 @@ function AboutUs() {
                 </div>
 
                 <div className="support">
-                <Tilt>
+               
 
                
                     <div className="f1">
@@ -27,8 +27,7 @@ function AboutUs() {
                        
                         Online & Physical support
                     </div>
-                    </Tilt>
-                    <Tilt>
+                    
 
                    
                     <div className="f2">
@@ -40,8 +39,7 @@ function AboutUs() {
                         
                     </div>
                     
-                    </Tilt>
-                    <Tilt>
+                  
                     <div className="f3">
                         <div className="support-icons">
                             <MdAttachMoney/>
@@ -49,7 +47,7 @@ function AboutUs() {
                         
                         100% Money Back guarantee
                     </div>
-                    </Tilt>
+                   
                    
                     
                 </div>
