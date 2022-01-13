@@ -10,6 +10,7 @@ import img5 from './images/s4.jpg'
 import { keyframes } from 'styled-components'
 import AboutUs from './Components/AboutUs'
 import Contacttemp from './Components/Contact/Contacttemp'
+import Tilt from 'react-tilt'
 
 const Hero = () => {
   return (
@@ -45,14 +46,14 @@ const Hero = () => {
         </HeroBg>
         <HeroContent>
           <HeroItems>
-           
+            <Tilt>
               <HeroH1>Beauty & Cosmetics Products</HeroH1>
-           
+            </Tilt>
 
             <Hero2>BabyCare | SkinCare | HairCare and much more</Hero2>
-            
+            <Tilt>
               <HeroP>By Soft Touch</HeroP>
-            
+            </Tilt>
             <button type="button" href="https://www.goldengirlcosmetics.com/" className="btn btn-outline-success btn-lg" >Shop Now</button>
 
             {/* <Button className="btn btn-outline-success" primary="true" big="true" round="true" href="https://www.goldengirlcosmetics.com/" target="_blank" style={{textDecoration : 'none'}}>Shop Now</Button> */}
