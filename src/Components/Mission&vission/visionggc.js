@@ -2,7 +2,7 @@ import React from 'react'
 import Tilt from 'react-tilt'
 import mission from '../../images/Mission.png'
 import vision from '../../images/Vision.png'
-import {MVisionContainer,MVisionRow,MVisionColumnS,MVisionImg } from './visionggcElements'
+import {MVisionContainer,MVisionRow,MVisionColumnS,MVisionImg } from './VisionggcElements'
 function Visionggc() {
     return (
         <>
