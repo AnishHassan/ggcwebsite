@@ -3,7 +3,7 @@ import Tilt from 'react-tilt'
 import mission from '../../images/Mission.png'
 import vision from '../../images/Vision.png'
 import {MVisionContainer,MVisionRow,MVisionColumnS,MVisionImg } from './visionggcElements'
-function Visionggc() {
+export default function Visionggc() {
     return (
         <>
           <MVisionContainer id="vision">
@@ -26,4 +26,3 @@ function Visionggc() {
     )
 }
 
-export default Visionggc
