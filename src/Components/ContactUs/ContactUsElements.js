@@ -47,7 +47,7 @@ position : relative;
 export const ContactUsInfo = styled.div`
 position: absolute;
 top : 40px;
-width : 350px;
+width : 370px;
 height : calc(100% - 200px);
 background: #eebb99;
 z-index: 1;

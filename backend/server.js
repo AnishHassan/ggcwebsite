@@ -31,6 +31,14 @@ const contactFormRouter = require('./routes/contactform');
 
 app.use('/contactform',contactFormRouter)
 
+// const CategoriesRouter = require('./routes/categories');
+
+// app.use('/categories',CategoriesRouter)
+
+const wishListRouter = require('./routes/wishlist');
+
+app.use('/wishlist',wishListRouter)
+
 app.listen(port, () => {
     console.log(`Server is running on port : ${port}`);
 })

@@ -5,7 +5,7 @@ import {AiOutlineShoppingCart} from 'react-icons/ai'
 // import {Button} from '../Button'
 import styled from 'styled-components'
 import logo from '../../images/logor.png'
-import { Nav, NavbarContainer, NavLogo ,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink} from './NavbarElements'
+import { Nav, NavbarContainer, NavLogo ,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink,NavLinkS} from './NavbarElements'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import {animateScroll as scroll} from 'react-scroll'
@@ -41,9 +41,9 @@ export const Navbar = ({toggle}) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks 
-                            to="/aboutus" 
-                            >About Us</NavLinks>
+                            <NavLinkS 
+                            to="aboutus" 
+                            >About Us</NavLinkS>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="/products"
@@ -56,6 +56,10 @@ export const Navbar = ({toggle}) => {
                         <NavItem>
                             <NavLinks to="/location"
                             >Store Locations</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="/wishlist"
+                            >Wish List</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>

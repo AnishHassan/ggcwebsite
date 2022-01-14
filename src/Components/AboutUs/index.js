@@ -3,6 +3,7 @@ import { BiSupport } from 'react-icons/bi'
 import { FaLaptop } from 'react-icons/fa'
 import { MdAttachMoney } from 'react-icons/md'
 import {AiTwotoneShopping} from 'react-icons/ai'
+import Tilt from 'react-tilt'
 
 import './Aboutus.css'
 function AboutUs() {
@@ -16,7 +17,7 @@ function AboutUs() {
                 </div>
 
                 <div className="support">
-                
+                <Tilt>
 
                
                     <div className="f1">
@@ -26,7 +27,8 @@ function AboutUs() {
                        
                         Online & Physical support
                     </div>
-                   
+                    </Tilt>
+                    <Tilt>
 
                    
                     <div className="f2">
@@ -38,7 +40,8 @@ function AboutUs() {
                         
                     </div>
                     
-                   
+                    </Tilt>
+                    <Tilt>
                     <div className="f3">
                         <div className="support-icons">
                             <MdAttachMoney/>
@@ -46,7 +49,7 @@ function AboutUs() {
                         
                         100% Money Back guarantee
                     </div>
-                  
+                    </Tilt>
                    
                     
                 </div>

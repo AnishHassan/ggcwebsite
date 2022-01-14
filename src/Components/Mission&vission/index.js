@@ -6,7 +6,7 @@ import {MVisionContainer,MVisionRow,MVisionColumnS,MVisionImg } from './visiongg
 export default function Visionggc() {
     return (
         <>
-          <MVisionContainer id="vision">
+          <MVisionContainer >
             <MVisionRow>
               
               <MVisionColumnS>

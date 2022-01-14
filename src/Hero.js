@@ -11,6 +11,7 @@ import { keyframes } from 'styled-components'
 import AboutUs from './Components/AboutUs'
 import Contacttemp from './Components/Contact/Contacttemp'
 import Tilt from 'react-tilt'
+import IntroAboutUs from './Components/introCompany/IntroAbout'
 
 const Hero = () => {
   return (
@@ -67,11 +68,15 @@ const Hero = () => {
 
         </HeroContent>
       </HeroContainer>
-
+      <div >
+      <IntroAboutUs/>
+      </div>
       <AboutUs />
       <div className=' mt-5 mb-5'>
         <Contacttemp />
       </div>
+      
+      
     </div>
   )
 }

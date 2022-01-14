@@ -33,6 +33,12 @@ export const ContactUs = () =>{
                 body: JSON.stringify(contactForm) 
             }).then(()=>{
                 console.log('contact form added  ')
+                setFirstName('');
+                setLastName('');
+                setEmail('');
+                setMessage('');
+                setPhone('');
+                alert('Submitted Successfully')
             })
               
         }
@@ -137,7 +143,7 @@ export const ContactUs = () =>{
                         <InputBoxBig>
                             <Input2 type="Submit" value="send" onClick={handleSubmit}/>
                         </InputBoxBig>
-
+                       
                     </FormBox>
                  </ContacForm>
               </ContactUsContainer>  
